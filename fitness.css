@@ -20,7 +20,7 @@
   body{
     background-color: white;
     color: rgb(2, 2, 2);
-    font-family: Helvetica, sans-serif;
+    font-family: cursive;
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
@@ -31,13 +31,12 @@
     margin: 0 auto;
 }
 header{
-    background-image: url("fit1.jpg"); 
+    background:linear-gradient(rgba(255, 255, 255, 0.219), rgba(255, 255, 255, 0.219)), url("fit2.jpg"); 
     height: 100vh;
     background-size: cover;
     background-position: bottom center;
     background-attachment: fixed;
-    background-repeat: no-repeat ;
-    opacity: 0.9;    
+    background-repeat: no-repeat ; 
 }
 .fitness-first-heading{
         width: 1140px;
@@ -61,10 +60,19 @@ h1{
    text-decoration: none;
     border-radius: 200px;
     background-color: #D79922;
-    color:black;
-     
+    color:black;   
 }
-.button:hover{
+.ghost-button{
+    border: 3px solid orangered;
+    width: fit-content;
+   display: inline-block;
+   padding: 10px 20px;
+   font-weight: 300;
+   text-decoration: none;
+    border-radius: 200px;
+    color:black; 
+}
+.button:hover ,.ghost-button:hover{
     background-color:orangered;
     color: black ;
     transition: 0.5s;
@@ -153,54 +161,133 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     padding: 4px 0;  
-}
-h3{
+}/*h3{
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 10px;
     padding: 4px 0;  
     margin-top: -30px;
+}*/
+.row-1{
+    display:grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 1em;
 }
-.container{
+.row-1>div{
+    background-color: #4056A1;
+    padding: 1em;
+}
+.row-1 > div:nth-child(odd){
+ background-color:#D79922;
+
+}
+.benefits{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 1em;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(40px ,auto);
+}
+
+.benefits> div{
+    padding: 1em;
+    border:#f13c20 3px solid;
+    background-color:  #4056A1;
+}
+.benefits> div:first-child{
+    background-color: #f13c20;
+}
+.Forms{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:1em ;
+}
+.Forms div{
+    padding: 1em;
+}
+.strong{
+    background: linear-gradient(rgba(255, 255, 255, 0.61), rgba(255, 255, 255, 0.616)), url(strong.jpg);    
+}
+.fitness{
+    background:linear-gradient(rgba(255, 255, 255, 0.404), rgba(255, 255, 255, 0.404)), url(fitnesszumba.jpg);
+}
+.toning{
+    background:linear-gradient(rgba(255, 255, 255, 0.404), rgba(255, 255, 255, 0.404)), url(toning.jpg);
+}
+/************ plans section*****/
+.Our-Plans{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    padding: 1em;
+}
+.Our-Plans>div:nth-child(even){
+    background-color:#D79922;
+}
+.Our-Plans>div:nth-child(odd){
+    background-color:#4056A1;
+}
+/************ plans section *****/
+/************ footer section *****/
+footer{
+    background-color: #364F6B;
+    padding: 50px;
+}
+.footer-details{
     display: flex;
-    width: 100%;
-    justify-content: center;
+    justify-content: space-around;
+    
+}
+.footer-company{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.footer-company li a {
+    text-decoration: none;
+    
+}
+.footer-company li{
+        margin-top:5px;
+    
     }
-
-.how-it-work-explain{
-flex: 0 0 60%;
-display: block;
-margin: auto 30px;
-
-}
-
-.how-it-work-explain p {
-        word-spacing: 2px;
-        margin-right: 30px;
-}
-
-.how-it-work-zumba-img{
- flex: 0 0 30%;
- margin-right: 40px;
- margin-left: 20px;
-}
-.image{
-    width: 100%;
-    display: block;
-    background-color: white;
-}
-.benefits-img , .shedule{
-    flex:0 0 30%;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.row-2{
-    margin-top: 30px;
-    padding: 4px;
-}
-.row-2 container{
+.footer-follow{
     display: flex;
+    margin-left: -20px;
+    margin-top: 20px;
 }
-section{
-    background-image: linear-gradient(to bottom right, #A40606,#D98324)
+.footer-follow li{
+    margin: 0 10px;
+    font-size: 150%;
 }
+.footer-company li a:link,
+  .footer-company li a:visited,
+  .footer-follow li a:link,
+  .footer-follow li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: rgb(153, 153, 153);
+    transition: color 0.2s;
+  }
+  .footer-company li a:active,
+  .footer-company li a:hover,
+  .footer-follow li a:active,
+  .footer-follow li a:hover{
+      color: rgb(231, 231, 231);
+  }
+  
+  .ion-logo-facebook:hover{ color: #3b5998;}
+  .ion-logo-twitter:hover{color: #00aced;}
+   .ion-logo-whatsapp:hover{ color:#25D366 ;}
+   .ion-logo-instagram:hover{color: #3f729b;}
+
+   /************ footer section*****/
+/*.Forms>div:nth-child(odd){
+    background-color:#D79922;
+}
+.Forms>div:nth-child(even){
+    background-color: #4056A1; 
+}*/
+

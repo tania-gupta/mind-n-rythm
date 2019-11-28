@@ -22,7 +22,7 @@
 body{
     background-color: white;
     color: rgb(2, 2, 2);
-    font-family: Helvetica, sans-serif;
+    font-family: cursive ;
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
@@ -192,7 +192,8 @@ label{
      }
 
 .dance-form{
-     background-image: linear-gradient(to bottom right, #A40606,#D98324)
+     background-image: linear-gradient(to bottom right, rgba(164, 6, 6),rgba(217, 130, 36))
+
     }
    
 .row--img {
