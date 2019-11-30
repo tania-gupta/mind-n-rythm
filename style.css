@@ -103,6 +103,7 @@ label{
     text-decoration: none;
     font-size: 90%;
     text-transform: uppercase;
+    padding: 10px 20px ;
 }
 .main-nav li a:hover,
 .main-nav li a:active{
@@ -117,12 +118,13 @@ label{
     display:none;
     visibility: hidden;
     margin-left: -40px;
+    margin-top: 4px;
 }
 .main-nav li ul li{
     background:rgba(215, 152, 34, 0.74);
     display: flex;   
     flex-direction: column;
-
+    
 }
 
 .main-nav li ul li a{
@@ -192,8 +194,8 @@ label{
      }
 
 .dance-form{
-     background-image: linear-gradient(to bottom right, rgba(164, 6, 6),rgba(217, 130, 36))
-
+     /*background-image: linear-gradient(to bottom right, rgba(164, 6, 6),rgba(217, 130, 36))
+*/   background-color: #c5cbe3;
     }
    
 .row--img {

@@ -71,7 +71,9 @@ h1{
    text-decoration: none;
     border-radius: 200px;
     color:black; 
+    margin-top: 60px;
 }
+
 .button:hover ,.ghost-button:hover{
     background-color:orangered;
     color: black ;
@@ -110,6 +112,7 @@ label{
     text-decoration: none;
     font-size: 90%;
     text-transform: uppercase;
+    padding: 10px 20px ;
 }
 .main-nav li a:hover,
 .main-nav li a:active{
@@ -124,7 +127,9 @@ label{
     display:none;
     visibility: hidden;
     margin-left: -40px;
+    margin-top: 4px;
 }
+
 .main-nav li ul li{
     background:rgba(215, 152, 34, 0.74);
     display: flex;   
@@ -160,14 +165,16 @@ h2 {
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 20px;
-    padding: 4px 0;  
-}/*h3{
+    padding: 4px 0; 
+
+}
+h3{
     word-spacing: 2px;
     text-align: center;
-    margin-bottom: 10px;
-    padding: 4px 0;  
-    margin-top: -30px;
-}*/
+}
+section{
+    background-color: #efe2ba;
+}
 .row-1{
     display:grid;
     grid-template-columns: 40% 60%;
@@ -191,34 +198,59 @@ h2 {
 
 .benefits> div{
     padding: 1em;
-    border:#f13c20 3px solid;
-    background-color:  #4056A1;
+    background-color: #D79922;
+    font-size: 20px;
 }
-.benefits> div:first-child{
+.benefits> div:hover{
+    padding: 1em;
     background-color: #f13c20;
+    font-size: 20px;
+    transition: 0.5s;
 }
 .Forms{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap:1em ;
-}
-.Forms div{
     padding: 1em;
 }
-.strong{
-    background: linear-gradient(rgba(255, 255, 255, 0.61), rgba(255, 255, 255, 0.616)), url(strong.jpg);    
+
+.Forms div , .Forms div p{
+    padding: 1em;
 }
+.Forms div p{
+    font-weight: 500;
+}
+.strong{
+    background: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(strong.jpg);  
+    transition: transform .5s;  
+}
+.strong:hover{
+    transform: scale(1.2);
+}
+
 .fitness{
-    background:linear-gradient(rgba(255, 255, 255, 0.404), rgba(255, 255, 255, 0.404)), url(fitnesszumba.jpg);
+    background:linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(fitnesszumba.jpg);
+    transition: transform .5s; 
+}
+.fitness:hover{
+    transform: scale(1.2);
 }
 .toning{
-    background:linear-gradient(rgba(255, 255, 255, 0.404), rgba(255, 255, 255, 0.404)), url(toning.jpg);
+    background:linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(toning.jpg);
+    transition: transform .5s; 
 }
+.toning:hover{
+    transform: scale(1.2);
+}
+
 /************ plans section*****/
 .Our-Plans{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 1em;
+    padding: 1em;
+}
+.Our-Plans div{
     padding: 1em;
 }
 .Our-Plans>div:nth-child(even){
@@ -228,6 +260,7 @@ h2 {
     background-color:#4056A1;
 }
 /************ plans section *****/
+
 /************ footer section *****/
 footer{
     background-color: #364F6B;
