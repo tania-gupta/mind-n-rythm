@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <title>contacts</title>
+    </head>
+    <body>
+        <header id="head">
+            <div class="row">
+                <nav class="fixed-nav-bar">
+                
+                    <img src="logo.png" alt="logo" class="logo">
+                    <ul class="main-nav clearfix">
+                            <label for ="toggle">&#9776;</label>
+                        <li><a href="index.html">Home </a></li>
+                        <li><a href="#">About Us<i class="icon ion-md-arrow-dropdown"></i></i></a>
+                           <ul>
+                            <li><a href="#">Our Story </a></li>
+                            <li><a href="#">FAQ </a></li>
+                           </ul>
+                        </li> 
+                        <li><a href="#">Classes<i class="icon ion-md-arrow-dropdown"></i></a>
+                           <ul>
+                            <li><a href="fitness.html">Fitness </a></li>
+                            <li><a href="#">Dance</a> </li>
+                           </ul>
+                        </li>  
+                        <li><a href="#" id="active">Join Us</a></li>
+                        
+                     </ul>
+                     
+                </nav>
+            </div>
+            <div id="map">
+            </div>
+            <script>
+                function initMap()
+                {
+                    var location={lat:32.928433, lng: 75.141808 };
+                    var map = new google.maps.Map(document.getElementById("map"),{
+                    zoom: 4,
+                    center: location
+                });
+                var marker = new google.maps.Marker({
+                    position:location,
+                    map               
+                 });
+                }
+
+                
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIs2-w9rFb4v9-RLnCtugSP61cl48BDbo&callback=initMap">
+            </script>
+        </header>
+        <section >
+         <div class="suggestion">
+            <div class="contact-details">
+                <p><strong><u> Phone:</u></strong>  +91 000000000 </p>
+                <p><strong><u>Address:</u></strong></p>
+                <p> Mind 'n' Rythm<br>Opposite State Bank Of India, Dhar Road, Indra Nagar,<br> Udhampur,Jammu & Kashmir <br> 182101  </p>
+                <p><strong><u>E-mail:</u></strong>  example@ </p>
+            </div>
+            <div class="message">
+                <div><p style="font-size: 150%;"><strong><u>Would Love To Hear From You!</u></strong></p></div>
+                <div>
+                    <label><strong> Name: </strong></label>
+                    <input type="text" name="Name" id="name"  placeholder="your name"  required>
+                </div>
+                <div>
+                <label><strong> Drop your message: </strong></label><br>
+                <textarea name="message" rows="8" cols="50" placeholder="your message or suggestions"></textarea>
+                </div> 
+                <input type="submit" value="submit" class="button"  style="margin-left: 25%" > 
+            </div>
+        </div>   
+        </section>
+        <footer>
+            <div class="row">
+                <div class="footer-details">
+                    <div class="other-details">
+                      <h3>Company</h3>
+                          <ul class="footer-company" style="list-style: none; ">
+                            <li><a href="#">About</a></li>
+                            <li><a href="contact.html" >Contact </a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms and Conditions </a></li>
+                           </ul>
+
+                     </div>
+                     <div class="Social-links">
+                        <h3>Follow Us</h3>
+                         <ul class="footer-follow" style="list-style: none; ">
+                            <li><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon ion-logo-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                         </ul>
+    
+                      </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

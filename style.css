@@ -32,6 +32,35 @@ body{
     max-width: 1140px;
     margin: 0 auto;
 }
+/***contact***/
+#head{
+    background-image: none;
+}
+#map{
+    width: 100%;
+    height: 100%;
+
+}
+.contact-details p{
+    padding: 10px;
+}
+.suggestion{
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-column-gap: 1em;
+    padding: 2em;
+    background-color: rgb(221, 219, 219);
+}
+.message div {
+  padding: 1em;
+}
+.suggestion textarea{
+    margin-top: 10px;
+}
+.message input{
+    
+}
+/******/
 header{
     background-image: url("2.jpg"); 
     height: 100vh;
