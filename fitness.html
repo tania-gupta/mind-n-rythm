@@ -35,10 +35,58 @@
                     
                     <div class="fitness-first-heading ">
                         <h1> Nothing Tastes <br> As Good As <span style="color: orangered;"> Being Thin </span>Feels. </h1>
-                        <a class="button" href="#">JOIN NOW. </a>
+                        <a class="button" href="#" id="button">JOIN NOW. </a>
                      </div> 
-                </header>
-                <section>
+
+                     <div class="bg-modal">
+                        <div class="modal-content">  
+                            <form method="POST" action="">
+                                <div class="close">+</div>
+                                <div>
+                                    <h3 style="font-size: 150% ; margin-left:60px;">Personal Details.</h3>
+                                    <label for="name">Name:</label>
+                                    <input type="text" placeholder="name" required>
+                                 </div>
+                                <div>
+                                    <label for="mail">E-mail:</label>
+                                    <input type="text" placeholder="e-mail">
+                                 </div>
+                                <div>
+                                    <label for="contact">Contact:</label>
+                                    <input type="text" placeholder="contact no" required>
+                                 </div>  
+                                 <div>
+                                     <label>How did you find us?</label>
+                                     <select name="find us" id="find us">
+                                        <option value="friends" selected>friends</option>
+                                        <option value="relatives">relatives</option>
+                                        <option value="newspaper">newspaper</option>
+                                        <option value="search engine">search engine</option>
+                                        <option value="others">others</option>
+                                    </select>
+                                </div>
+                                 <h3 style="font-size: 150% ;margin-left: 60px;">Payment Details</h3>
+                                 <label for="fname">Accepted Cards</label>
+                                     <div class="icon-container">
+                                            <img src="mt.png" alt="mastero">
+                                            <img src="vi.png" alt="visacard">
+                                            <img src="mc.png" alt="mastercard">
+                                      </div>
+                                 <div><label>Name on Card:</label>
+                                 <input type="text" id="cname" name="cardname" placeholder="John More Doe" required></div>
+                                 <div><label>Card number:</label>
+                                 <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required></div>
+                                 <div><label>Exp:</label>
+                                 <input type="text" id="expmonth" name="expmonth" placeholder="September/2019" required></div>
+                     
+                                 <input type="submit" value="submit" class="button" id="submit">
+            
+                             </form>   
+                        </div>
+                    </div>
+        </header>
+                
+        <section>
                     <div class="about-zumba">
                         <h2> ZUMBA</h2>
                     </div>
@@ -83,9 +131,9 @@
                                 <p>Those who want to party, but put extra emphasis on toning and sculpting to define those muscles!<br>Lightweight maraca-like Toning Sticks enhances sense of rhythm and coordination, while toning target zones, including arms, core and lower body.</p>
                                 </div>
                     </div>
-                </section>
+        </section>
                 
-                <section>
+        <section>
                     <h2>Our Plans</h2>
                     <div class="Our-Plans">
                         <div class="Half-Yearly-Plan">
@@ -108,9 +156,9 @@
                                 <a class="ghost-button" href="#">JOIN NOW. </a>
                         </div>
                     </div>
-                </section>
+        </section>
 
-                <footer>
+        <footer>
                         <div class="row">
                             <div class="footer-details">
                             <div class="other-details">
@@ -136,4 +184,7 @@
                                  </div>
                                 </div>
                         </div>
-                    </footer>
+        </footer>
+                    <script src="java.js"></script> 
+        </body>
+        </html>
